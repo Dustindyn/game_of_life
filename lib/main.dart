@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:game_of_life/src/board.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,10 +11,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+      home: Board(
+        numCellsX: 100,
+        numCellsY: 100,
       ),
     );
   }
