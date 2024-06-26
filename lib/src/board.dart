@@ -19,7 +19,8 @@ class _BoardState extends State<Board> {
   @override
   void initState() {
     _initializeCells();
-    Timer.periodic(Duration(milliseconds: 100), (_) => _goToNextGeneration());
+    Timer.periodic(
+        const Duration(milliseconds: 100), (_) => _goToNextGeneration());
     super.initState();
   }
 
